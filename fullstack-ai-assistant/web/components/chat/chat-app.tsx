@@ -148,17 +148,7 @@ export function ChatApp() {
         </header>
 
         {empty ? (
-          <div className="relative flex flex-1 flex-col justify-center overflow-y-auto px-3 pb-[8vh] sm:px-6">
-            <div className="absolute inset-0 -z-10 h-full w-full">
-              <Ribbons
-                baseThickness={40}
-                colors={['#5227FF', '#FC8EAC', '#FFFFFF', '#A855F7']}
-                speedMultiplier={0.8}
-                maxAge={600}
-                enableFade={true}
-                enableShaderEffect={true}
-              />
-            </div>
+          <div className="flex flex-1 flex-col justify-center overflow-y-auto px-3 pb-[8vh] sm:px-6">
             <EmptyState />
             {composer}
             <SuggestionGrid onPick={chat.send} />
