@@ -15,37 +15,31 @@ This repository serves as the primary hub for the OpenChat ecosystem, featuring 
 
 ```text
 openchat/
-├── ai-assistant/     # The full-stack AI application (API + Web)
-│   ├── api/          # FastAPI backend
-│   └── web/          # Next.js frontend
-├── AGENTS.md         # Project rules and development guidelines
-└── README.md         # Project entry point
+├── api/          # FastAPI backend
+├── web/          # Next.js frontend
+├── AGENTS.md     # Project rules and development guidelines
+└── README.md     # Project entry point
 ```
 
 ## 🛠️ Quick Start
 
 To get the main AI assistant running:
 
-1. **Clone and Enter the Assistant Directory:**
-   ```bash
-   cd ai-assistant
-   ```
-
-2. **Start the Backend:**
+1. **Start the Backend:**
    ```bash
    cd api
    uv sync
    uv run fastapi dev app/main.py
    ```
 
-3. **Start the Frontend:**
+2. **Start the Frontend:**
    ```bash
-   cd ../web
+   cd web
    npm install
    npm run dev
    ```
 
-4. **Access the App:**
+3. **Access the App:**
    Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## ⚙️ Development Guidelines
